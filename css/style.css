@@ -151,3 +151,22 @@ li.create-playlist:first-child {
     padding: 3px;
     border-radius: 50%;
 }
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    margin-right: 25px;
+}
