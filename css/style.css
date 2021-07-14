@@ -5,3 +5,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* COMMON */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    background-color: royalblue;
+}
+/* ASIDE */
+
+
+div {
+    display: flex;
+}
+
+header {
+    width: calc(100vw - 220px);
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    position: fixed;
+    top: 0;
+}
+
+aside {
+    width: 220px;
+    height: calc(100vh - 110px);
+    background-color: black;
+}
+
+main {
+    height: calc(100vh - 110px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100% - 220px);
+    background-color: royalblue;
+    margin-left: auto;
+    margin-top: 90px;
+    font-size: 40px;
+}
+
+footer {
+    height: 110px;
+    width: calc(100vw);
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+}
