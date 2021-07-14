@@ -9,33 +9,40 @@
 /* COMMON */
 
 html {
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif; 
 }
 
 body {
-    background-color: royalblue;
+    background-color: #141922;
+    color: #fff;
 }
-/* ASIDE */
-
 
 div {
     display: flex;
 }
 
+ul {
+    list-style: none;
+}
+
+/* MAIN STRUCTURE */
+
 header {
     width: calc(100vw - 220px);
     height: 90px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     margin-left: auto;
     position: fixed;
     top: 0;
 }
 
 aside {
+    position: relative;
     width: 220px;
     height: calc(100vh - 110px);
     background-color: black;
+    color: #a3a3a3;
+    font-size: 0.8rem;
 }
 
 main {
@@ -43,7 +50,7 @@ main {
     overflow-y: scroll;
     overflow-x: hidden;
     width: calc(100% - 220px);
-    background-color: royalblue;
+    background-color: #141922;
     margin-left: auto;
     margin-top: 90px;
     font-size: 40px;
@@ -52,7 +59,95 @@ main {
 footer {
     height: 110px;
     width: calc(100vw);
-    background-color: yellow;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
+}
+
+/* ASIDE */
+
+aside img.spotify-logo {
+    width: 70%;
+    padding-top: 20px;
+}
+
+aside .left-gap {
+    padding-left: 15px;
+}
+
+aside ul.nav-menu {
+    padding-top: 20px;
+}
+
+aside ul li img {
+    width: 15%;
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+aside h3 {
+    font-size: 1rem;
+    padding: 15px 0;
+    color: #fff;
+}
+
+aside ul li {
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+aside ul li i {
+    font-size: 3rem;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+li.create-playlist:first-child {
+    font-size: 0.9rem;
+    padding-top: 0;
+}
+
+.playlist li {
+    padding-top: 20px;
+}
+
+.aside-bottom {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.aside-bottom img {
+    width: 20px;
+}
+
+.download {
+    border-bottom: 1px solid #a3a3a3;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.download span {
+    margin-left: 10px;
+}
+
+.profile {
+    margin-top: 15px;
+    line-height: 30px;  
+}
+
+.profile span {
+    margin-left: 10px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    background-color: #808080;
+    color: #fff;
+    padding: 3px;
+    border-radius: 50%;
 }
