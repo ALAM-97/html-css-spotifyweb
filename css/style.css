@@ -42,6 +42,8 @@ aside {
     background-color: black;
     color: #a3a3a3;
     font-size: 0.8rem;
+    padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 main {
@@ -65,16 +67,20 @@ footer {
 
 /* ASIDE */
 
+.aside-xs {
+    display: none;
+}
+
 aside img.spotify-logo {
     width: 70%;
     padding-top: 25px;
 }
 
-aside {
+.aside-content {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-bottom: 10px;
 }
 
 aside ul.nav-menu {
@@ -201,7 +207,11 @@ header a {
     justify-content: center;
 }
 
-main ul li {
+main div.main-content ul {
+    text-align: center;
+}
+
+main div.main-content ul li {
     display: inline-block;
     font-size: 1rem;
     padding-right: 1.5rem;
@@ -217,8 +227,7 @@ main ul li {
     font-size: 1rem;
     color: #7d7f84;
     padding-bottom: 20px;
-    padding-left: 35px;
-    
+    padding-left: 35px; 
 }
 
 .song-icons {
@@ -227,7 +236,7 @@ main ul li {
 
 .song {
     width: calc(95% / 6);
-    padding-left: 35px;
+    padding-left: 2rem;
     margin-top: 20px;
 }
 
@@ -250,4 +259,124 @@ main ul li {
 
 .circle-img {
     border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1100px) {
+    .song {
+        width: calc(95% / 4);
+        padding-left: 1rem;
+        margin-top: 20px;
+    }
+    .song-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .song-title {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    main div.main-content ul li {
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .song {
+        width: calc(95% / 2);
+        padding-left: 1rem;
+        margin-top: 20px;
+    }
+    .song-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .song-title {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: calc(100vw - 50px);
+    }
+    header {
+        width: calc(100vw - 50px);
+    }
+    aside {
+        width: 50px;
+        height: calc(100vh - 110px);
+        padding: 13px 7px;
+    }
+    .aside-content{
+        display: none;
+    }
+    .aside-xs {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-xs {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .icon-xs {
+        flex-grow: 1;
+    }
+    .icon-xs img {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .download-xs img{
+        width: 80%;
+        margin-left: 2px;
+        align-self: center;
+        padding-bottom: 20px;
+    }
+    .profile-xs img{
+        width: 35px;
+        height: 35px;
+        background-color: #808080;
+        color: #fff;
+        padding: 1px;
+        border-radius: 50%;
+        margin-left: 1px;
+    }
+    main div.main-content ul {
+        margin-left: 1rem;;
+    }
+    main div.main-content ul li {
+        display: inline-block;
+        text-align: center;
+        font-size: 1rem;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .song {
+        width: calc(95% / 2);
+        padding-left: 1rem;
+        margin-top: 20px;
+    }
+    .song-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .song-title {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
 }
