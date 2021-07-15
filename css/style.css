@@ -17,7 +17,7 @@ body {
     color: #fff;
 }
 
-div {
+div.content {
     display: flex;
 }
 
@@ -28,7 +28,7 @@ ul {
 /* MAIN STRUCTURE */
 
 header {
-    width: calc(100vw - 220px);
+    width: calc(100vw - 250px);
     height: 90px;
     background-color: rgba(0, 0, 0, 0.4);
     margin-left: auto;
@@ -37,8 +37,7 @@ header {
 }
 
 aside {
-    position: relative;
-    width: 220px;
+    width: 250px;
     height: calc(100vh - 110px);
     background-color: black;
     color: #a3a3a3;
@@ -46,14 +45,12 @@ aside {
 }
 
 main {
-    height: calc(100vh - 110px);
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: calc(100% - 220px);
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    width: calc(100% - 250px);
     background-color: #141922;
     margin-left: auto;
     margin-top: 90px;
-    font-size: 40px;
 }
 
 footer {
@@ -68,10 +65,10 @@ footer {
 
 aside img.spotify-logo {
     width: 70%;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
-aside .left-gap {
+aside {
     padding-left: 15px;
 }
 
@@ -102,18 +99,33 @@ aside ul li i {
     padding-right: 5px;
 }
 
-li.create-playlist:first-child {
-    font-size: 0.9rem;
+.add-playlist {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #a3a3a3;
+    color: black;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.create-playlist {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.2rem;
     padding-top: 0;
+}
+
+.playlist {
+    overflow-y: auto;
 }
 
 .playlist li {
     padding-top: 20px;
-}
-
-.aside-bottom {
-    position: absolute;
-    bottom: 10px;
     width: 100%;
 }
 
@@ -126,6 +138,7 @@ li.create-playlist:first-child {
     margin-right: 25px;
     padding-bottom: 10px;
     line-height: 20px;
+    display: flex;
 }
 
 .download span {
@@ -134,7 +147,8 @@ li.create-playlist:first-child {
 
 .profile {
     margin-top: 15px;
-    line-height: 30px;  
+    line-height: 30px; 
+    display: flex; 
 }
 
 .profile span {
@@ -165,8 +179,21 @@ header a {
     font-weight: 700;
     text-decoration: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.8rem 1.7rem;
     border: 1px solid #fff;
     border-radius: 50px;
     margin-right: 25px;
+}
+
+/* MAIN */
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+main ul li {
+    display: inline-block;
+    font-size: 1rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
 }
