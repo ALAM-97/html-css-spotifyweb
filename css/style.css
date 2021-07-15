@@ -25,6 +25,15 @@ ul {
     list-style: none;
 }
 
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent,#adff2f);
+    border-radius: 4.5px;
+}
+
 /* MAIN STRUCTURE */
 
 header {
@@ -260,6 +269,70 @@ main div.main-content ul li {
 .circle-img {
     border-radius: 50%;
 }
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-right {
+    width: 300px;
+    height: 70px;
+    background-color: #adff2f;
+}
+
+.footer-mid {
+    width: 700px;
+     height: 70px;
+    background-color: #adff2f;
+}
+
+.footer-left {
+    height: 100%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-left img{
+    width: 60px;
+    height: 60px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.played-song-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.played-song-subtitle {
+    font-size: 0.7rem;
+    color: #7d7f84;
+}
+
+.footer-left-icons {
+    margin-left: 35px;
+    font-size: 1.2rem;
+    color: #7d7f84;
+}
+
+.footer-left-icons i {
+    padding-right: 10px;
+}
+
+
+
+
+
 
 /* MEDIA QUERIES */
 
