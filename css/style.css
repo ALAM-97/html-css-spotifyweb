@@ -282,12 +282,9 @@ footer {
     width: 300px;
     height: 70px;
     background-color: #adff2f;
-}
-
-.footer-mid {
-    width: 700px;
-     height: 70px;
-    background-color: #adff2f;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .footer-left {
@@ -295,7 +292,7 @@ footer {
     margin-left: 15px;
     display: flex;
     align-items: center;
-    
+    flex-grow: 1;
 }
 
 .footer-left img{
@@ -306,6 +303,7 @@ footer {
 .song-info {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     padding-left: 15px;
 }
 
@@ -329,8 +327,63 @@ footer {
     padding-right: 10px;
 }
 
+.footer-mid {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+}
 
+.footer-mid-top {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
 
+.footer-mid-top i {
+    font-size: 1.4rem;
+    padding: 1.5rem;
+}
+
+i.fa-play-circle {
+    font-size: 2.3rem;
+    padding: 2.5rem;
+}
+
+.footer-mid-bottom {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.time-bar {
+    position: relative;
+    margin: 0 25px;
+    height: 5px;
+    width: 90%;
+    background-color: #5a5a5a;
+    border-radius: 2.5px;
+}
+
+.time-bar-passed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 5px;
+    border-radius: 2.5px;
+    border-radius: 2.5px;
+    background-color: #c1c1c1;
+}
+
+.song-time {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
 
 
 
