@@ -69,7 +69,10 @@ aside img.spotify-logo {
 }
 
 aside {
+    display: flex;
+    flex-direction: column;
     padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 aside ul.nav-menu {
@@ -99,6 +102,11 @@ aside ul li i {
     padding-right: 5px;
 }
 
+.playlist-section {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
 .add-playlist {
     width: 40px;
     height: 40px;
@@ -121,12 +129,12 @@ aside ul li i {
 }
 
 .playlist {
+    height: calc(100% - 89px);
     overflow-y: auto;
 }
 
 .playlist li {
     padding-top: 20px;
-    width: 100%;
 }
 
 .aside-bottom img {
