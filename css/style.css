@@ -241,6 +241,7 @@ main div.main-content ul li {
 
 .song-icons {
     display: flex;
+    position: relative;
 }
 
 .song {
@@ -249,8 +250,40 @@ main div.main-content ul li {
     margin-top: 20px;
 }
 
-.song img {
+.song img{
     width: 100%;
+    display: block;
+}
+
+.hover-song {
+    position: relative;
+    width: 100%;
+}
+
+.hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-hover {
+    border-radius: 50%;
+}
+
+.hover-effect .fa-play-circle {
+    font-size: 50px;
+}
+
+.song:hover .hover-effect {
+    opacity: 1;
 }
 
 .song-title {
@@ -368,7 +401,6 @@ i.fa-play-circle {
 }
 
 .time-bar {
-    position: relative;
     margin: 0 1.3rem;
     height: 5px;
     width: 90%;
@@ -383,10 +415,7 @@ i.fa-play-circle {
 }
 
 .time-bar-passed {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 15%;
+    width: 25%;
     height: 5px;
     border-radius: 2.5px;
     border-radius: 2.5px;
@@ -500,8 +529,9 @@ i.fa-play-circle {
         flex-grow: 1;
     }
     .icon-xs img {
-        width: 100%;
+        width: 80%;
         padding-bottom: 10px;
+        margin-left: 3px;
     }
     .download-xs img{
         width: 80%;
