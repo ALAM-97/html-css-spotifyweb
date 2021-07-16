@@ -282,17 +282,34 @@ main div.main-content ul {
 main div.main-content ul li {
     display: inline-block;
     font-size: 1rem;
-    padding-right: 1.5rem;
-    padding-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
 }
 
-main div.main-content ul li:hover {
+main div.main-content ul li a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+
+main div.main-content ul li:first-child::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: greenyellow;
+    width: 45px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main div.main-content ul li a:hover {
     cursor: pointer;
+    color: #fff;
+    font-weight: 600;
 }
 
 .section-title {
     font-size: 2.5rem;
-    padding: 70px 0 20px 35px;
+    margin: 70px 0 20px 35px;
 }
 
 .section-subtitle {
