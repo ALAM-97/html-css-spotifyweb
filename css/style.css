@@ -51,7 +51,7 @@ aside {
     background-color: black;
     color: #a3a3a3;
     font-size: 0.8rem;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     padding-bottom: 10px;
 }
 
@@ -83,6 +83,7 @@ footer {
 aside img.spotify-logo {
     width: 70%;
     padding-top: 25px;
+    margin-left: 25px;
 }
 
 .aside-content {
@@ -99,7 +100,8 @@ aside ul.nav-menu {
 aside ul li img {
     width: 15%;
     vertical-align: middle;
-    padding-bottom: 10px;
+    padding: 5px 0;
+    margin-left: 22px;
 }
 
 aside h3 {
@@ -113,6 +115,26 @@ aside ul li {
     vertical-align: middle;
 }
 
+.nav-menu li span {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.nav-menu li:hover ,
+.playlist li:hover,
+.download:hover {
+    color: #fff;
+    font-weight: 800;
+}
+
+.nav-menu li {
+    border-left: 3px solid transparent;
+}
+    
+.nav-menu li:first-child {
+    border-left: 3px solid yellowgreen;
+}
+
 aside ul li i {
     font-size: 3rem;
     vertical-align: middle;
@@ -122,9 +144,11 @@ aside ul li i {
 .playlist-section {
     flex-grow: 1;
     overflow: hidden;
+    margin-left: 25px;
 }
 
 .add-playlist {
+    position: relative;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -134,6 +158,32 @@ aside ul li i {
     font-size: 3.5rem;
     font-weight: 500;
     display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.create-playlist-btn:hover .add-playlist-white {
+    opacity: 1;
+}
+
+.create-playlist-btn:hover .create-playlist {
+    color: #fff;
+    font-weight: 600;
+}
+
+.add-playlist-white {
+    position: absolute;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    display: inline-block;
+    opacity: 0;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -152,6 +202,10 @@ aside ul li i {
 
 .playlist li {
     padding-top: 20px;
+}
+
+.aside-bottom {
+    margin-left: 25px;
 }
 
 .aside-bottom img {
@@ -230,6 +284,10 @@ main div.main-content ul li {
     font-size: 1rem;
     padding-right: 1.5rem;
     padding-top: 1.5rem;
+}
+
+main div.main-content ul li:hover {
+    cursor: pointer;
 }
 
 .section-title {
