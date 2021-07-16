@@ -412,10 +412,21 @@ footer {
     color: #7d7f84;
 }
 
+.played-song-subtitle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .footer-left-icons {
     margin-left: 35px;
     font-size: 1.2rem;
     color: #7d7f84;
+}
+
+.fa-heart:hover,
+.fa-folder:hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 .footer-left-icons i {
@@ -450,6 +461,11 @@ i.fa-play-circle {
     padding: 0 1.3rem;
 }
 
+.fa-play-circle:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .fa-random,
 .fa-step-forward {
     padding-right: 0.5rem;
@@ -471,6 +487,14 @@ i.fa-play-circle {
     border-radius: 2.5px;
 }
 
+.time-bar-passed:hover {
+    width: 25%;
+    height: 5px;
+    border-radius: 2.5px;
+    border-radius: 2.5px;
+    background-color: yellowgreen;
+}
+
 .time-bar-left {
     max-width: 90px;
     min-width: 70px;
@@ -478,6 +502,7 @@ i.fa-play-circle {
 }
 
 .time-bar-passed {
+    position: relative;
     width: 25%;
     height: 5px;
     border-radius: 2.5px;
@@ -487,6 +512,30 @@ i.fa-play-circle {
 
 .time-bar-passed-left {
     width: 40%;
+}
+
+.time-bar-passed-left:hover {
+    width: 40%;
+    height: 5px;
+    border-radius: 2.5px;
+    border-radius: 2.5px;
+    background-color: yellowgreen;
+}
+
+.circle-time {
+    position: absolute;
+    right: 0;
+    bottom: -100%;
+    transform: translate(50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.time-bar-passed:hover .circle-time {
+    opacity: 1;
 }
 
 .song-time {
