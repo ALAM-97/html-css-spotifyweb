@@ -274,16 +274,15 @@ main div.main-content ul li {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
 }
 
 .footer-right {
-    width: 300px;
     height: 70px;
-    background-color: #adff2f;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     flex-grow: 1;
 }
 
@@ -333,28 +332,36 @@ footer {
     flex-direction: column;
     align-items: center;
     flex-grow: 2;
+    margin: 0 15px;
 }
 
 .footer-mid-top {
     height: 50%;
+    width: 45%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .footer-mid-top i {
-    font-size: 1.4rem;
-    padding: 1.5rem;
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
 }
 
 i.fa-play-circle {
-    font-size: 2.3rem;
-    padding: 2.5rem;
+    font-size: 1.8rem;
+    padding: 0 1.3rem;
+}
+
+.fa-random,
+.fa-step-forward {
+    padding-right: 0.5rem;
 }
 
 .footer-mid-bottom {
     height: 50%;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -362,11 +369,17 @@ i.fa-play-circle {
 
 .time-bar {
     position: relative;
-    margin: 0 25px;
+    margin: 0 1.3rem;
     height: 5px;
     width: 90%;
     background-color: #5a5a5a;
     border-radius: 2.5px;
+}
+
+.time-bar-left {
+    max-width: 90px;
+    min-width: 70px;
+    margin: 0 10px
 }
 
 .time-bar-passed {
@@ -380,11 +393,19 @@ i.fa-play-circle {
     background-color: #c1c1c1;
 }
 
+.time-bar-passed-left {
+    width: 40%;
+}
+
 .song-time {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 600;
 }
 
+.footer-right i {
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+}
 
 
 /* MEDIA QUERIES */
@@ -423,7 +444,7 @@ i.fa-play-circle {
     }
     .song-icons {
         display: flex;
-        flex-wrap: wrap;
+        
     }
     .song-title {
         text-align: center;
@@ -431,6 +452,23 @@ i.fa-play-circle {
         font-size: 1.2rem;
         font-weight: 700;
     }
+    .footer-left {
+        margin-left: 5px;
+    }
+    .footer-left-icons {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        font-size: 1rem;
+        margin-left: 1.2rem;
+    }
+    .footer-left-icons i {
+        margin: 0.1rem 0;
+    }
+    .song-info {
+        padding-left: 7px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
